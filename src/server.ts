@@ -1,7 +1,5 @@
 import express from "express";
 
-// TODO: criar repositório ainda hoje. E também o README.md
-
 const app = express();
 
 app.use(express.json());
