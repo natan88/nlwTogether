@@ -1,23 +1,15 @@
+import "reflect-metadata";
 import express from "express";
+import { router } from "./routes";
+
+const port = process.env.PORT || 3000;
+
+import "./database";
 
 const app = express();
 
 app.use(express.json());
 
-app.get("/teste", (req, res) => {
-  return res.send("Foguete NLW decolando ... ->");
-});
+app.use(router);
 
-app.post("/teste-post", (req, res) => {
-  const { nome, email } = req.body;
-  return res.status(201).json({
-    statusCode: 201,
-    success: true,
-    payload: {
-      name: nome,
-      mail: email,
-    },
-  });
-});
-
-app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
+app.listen(port, () => console.log("Servidor rodando na porta " + port));
