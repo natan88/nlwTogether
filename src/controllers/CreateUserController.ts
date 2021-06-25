@@ -11,7 +11,7 @@ class CreateUserController {
 
     return response.status(201).json({
       success: true,
-      statusCode: 200,
+      statusCode: 201,
       payload: user,
     });
   }
