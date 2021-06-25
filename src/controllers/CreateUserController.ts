@@ -1,9 +1,9 @@
 import { CreateUserService } from "../services/CreateUserService";
 import { Request, Response } from "express";
-import { IResponseSuccess, IResponse } from "../util/IResponse";
+import { IResponseSuccess } from "../util/IResponse";
 
 class CreateUserController {
-  async handle(request: Request, response: Response<IResponse>) {
+  async handle(request: Request, response: Response<IResponseSuccess>) {
     const { name, email, admin } = request.body;
     const createUserService = new CreateUserService();
 
