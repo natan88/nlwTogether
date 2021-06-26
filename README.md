@@ -33,7 +33,7 @@ Criar um arquivo na raiz do projeto com o nome ```.env``` e colocar as variávei
 
 Sendo que ```POST``` será a porta em que a aplicação irá rodar. Se não for informado nada será utilizado a porta ```3000```, o padrão.
 
-A variável ```JWT_SECRET``` é o parâmetro ```secret``` do JWT.
+A variável ```JWT_SECRET``` é o parâmetro ```secret``` do JWT.sign().
 
 
 Site do projeto: [Next level Week - NLW](https://nextlevelweek.com/)
