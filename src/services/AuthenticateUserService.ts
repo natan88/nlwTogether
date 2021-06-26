@@ -23,7 +23,7 @@ export class AuthenticateUserService {
       {
         email: user.email
       },
-      process.env.JWT_SECRE,
+      process.env.JWT_SECRET,
       {
         subject: user.id,
         expiresIn: "1d"
