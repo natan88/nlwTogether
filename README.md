@@ -23,6 +23,19 @@ Desenvolver uma API Node.js para permitir que usuários façam elogios à seus c
   - listar tags
   - listar elogios por usuários
 
+## Instalação e execução
+Para instalar a aplicação basta rodar o comando ```js yarn install``` ou ```js npm install```
+
+Para executar a aplicação em modo de desenvolvimento basta rodar o comando ```js yarn dev``` ou ```js npm run dev```
+
+## Variáveis de ambiente
+Criar um arquivo na raiz do projeto com o nome ```.env``` e colocar as variáveis ```POST``` e ```JWT_SECRET```
+
+Sendo que ```POST``` será a porta em que a aplicação irá rodar. Se não for informado nada será utilizado a porta ```3000```, o padrão.
+
+A variável ```JWT_SECRET``` é o parâmetro ```secret``` do JWT.
+
+
 Site do projeto: [Next level Week - NLW](https://nextlevelweek.com/)
 
 Tag: ```#nlwTogether```
